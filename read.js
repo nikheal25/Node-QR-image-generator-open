@@ -9,5 +9,9 @@ fs.createReadStream("./new.csv")
     data.push(`${r[0]}`);
   })
   .on("end", () => {
-    console.log(data);
+    // console.log(data);
+    console.log(typeof data);
+    data.forEach((element) => {
+      console.log(element);
+    });
   });
